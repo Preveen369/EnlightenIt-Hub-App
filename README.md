@@ -1,1 +1,1 @@
-# EnlightenIt-Hub
+# EnlightenIt-Hub-App
