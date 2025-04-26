@@ -50,7 +50,7 @@ const loginUser = async (req, res, next) => {
     try{
         const {email, password} = req.body;
         if (!email || !password){
-            return next(new HttpError("Fill in all fields.", 422))
+            return next(new HttpError("Invalid email or password.", 422))
         }
 
         const newEmail = email.toLowerCase();
@@ -62,7 +62,7 @@ const loginUser = async (req, res, next) => {
 
         const comparePass = await bcrypt.compare(password, user.password)
         if(!comparePass) {
-            return next(new HttpError("Invalid credentials.", 422))
+            return next(new HttpError("Invalid password entered.", 422))
         }
 
         const {_id: id, name} = user;

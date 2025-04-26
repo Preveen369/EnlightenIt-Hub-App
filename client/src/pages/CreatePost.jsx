@@ -1,12 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useContext, useEffect} from "react";
+import { useNavigate } from "react-router-dom";
 import ReactQuill from "react-quill-new";
 import "react-quill-new/dist/quill.snow.css"; 
+import { UserContext } from "../context/userContext.js";
 
 const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
   const [description, setDescription] = useState("");
   const [thumbnail, setThumbnail] = useState("");
+
+  const {currentUser} = useContext(UserContext);
+  const token = currentUser?.token;
+  const navigate = useNavigate();
+  
+  // redirect to login page for any user who isn't logged in
+  useEffect(() => {
+    if (!token) {
+      navigate("/login");
+    }
+  }, [])
 
   const modules = {
     toolbar: [

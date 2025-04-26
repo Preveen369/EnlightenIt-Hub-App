@@ -66,7 +66,7 @@ const getPosts = async (req, res, next) => {
 
 // --- GET SINGLE POST ---
 // GET: api/posts/:id
-// UNPROTECTED
+// PROTECTED
 const getPost = async (req, res, next) => {
     try {
         const postId = req.params.id;
@@ -97,7 +97,7 @@ const getCatPosts = async (req, res, next) => {
 
 // --- GET USER / AUTHOR POST ---
 // GET: api/posts/users/:id
-// UNPROTECTED
+// PROTECTED
 const getUserPosts = async (req, res, next) => {
     try {
         const { id } = req.params;
