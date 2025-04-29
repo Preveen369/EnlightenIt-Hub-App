@@ -1,10 +1,13 @@
-import React, { useContext, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useContext, useState, useEffect } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { UserContext } from "../context/userContext";
 import axios from "axios";
+import Loader from "../components/Loader";
 
 const DeletePost = ({ postId }) => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const[isLoading, setIsLoading] = useState(false);
   const { currentUser } = useContext(UserContext);
   const token = currentUser?.token;
 
@@ -16,26 +19,42 @@ const DeletePost = ({ postId }) => {
   }, [token, navigate]);
 
   const handleDelete = async () => {
+    setIsLoading(true)
+
     if (!window.confirm("Are you sure you want to delete this post?")) {
       return;
     }
+
     try {
-      await axios.delete(`${process.env.REACT_APP_BASE_URL}/posts/${postId}`, {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-      navigate("/");
+      const response = await axios.delete(
+        `${process.env.REACT_APP_BASE_URL}/posts/${postId}`, 
+        { withCredentials : true,
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      if (response.status === 200){
+        if (location.pathname === `/myposts/${currentUser.id}`) {
+          navigate(0);
+        } else {
+          navigate("/");
+        }
+      }
+      setIsLoading(false)
     } catch (error) {
-      console.error("Failed to delete post:", error);
+      console.error("Couldn't delete post:", error);
       alert("Failed to delete post. Please try again.");
-    }
+    }    
   };
 
+  if (isLoading){
+    return <Loader/>
+  }
+
   return (
-    <button className="btn sm danger" onClick={handleDelete}>
-      Delete
-    </button>
+    <Link className="btn sm danger" 
+      onClick={handleDelete}> Delete </Link>
   );
 };
 

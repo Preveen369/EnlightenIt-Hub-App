@@ -1,18 +1,21 @@
 import React, { useState, useEffect, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { UserContext } from "../context/userContext.js";
 import ReactQuill from "react-quill-new";
 import "react-quill-new/dist/quill.snow.css"; 
+import axios from "axios";
 
 const EditPost = () => {
   const [title, setTitle] = useState("");
   const [category, setCategory] = useState("");
   const [description, setDescription] = useState("");
   const [thumbnail, setThumbnail] = useState("");
+  const [error, setError] = useState("");
 
   const {currentUser} = useContext(UserContext);
   const token = currentUser?.token;
   const navigate = useNavigate();
+  const {id} = useParams();
   
   // redirect to login page for any user who isn't logged in
   useEffect(() => {
@@ -34,19 +37,60 @@ const EditPost = () => {
   const formats = [
     'header', 
     'bold', 'italic', 'underline', 'strike', 'blockquote',
-    'list', 'bullet', 'indent',
+    'list', 'indent',
     'link', 'image'
   ];
 
   const POST_CATEGORIES = ["Agriculture", "Business", "Education", "Entertainment", "Art", 
   "Investment", "Uncategorized", "Weather"];
 
+
+  useEffect(() => {
+      const getPost = async() => {
+        try{
+          const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/posts/${id}`);
+          setTitle(response.data.title);
+          setCategory(response.data.category);
+          setDescription(response.data.description);
+          
+        } catch(error) {
+          console.log(error);
+        }
+      }
+      getPost();
+  }, []) 
+
+  const editPost = async (e) => {
+    e.preventDefault();
+
+    const postData = new FormData();
+    postData.set('title', title);
+    postData.set('category', category);
+    postData.set('description', description);
+    postData.set('thumbnail', thumbnail);
+
+    try{
+      const token = localStorage.getItem('token');
+      const response = await axios.patch(`${process.env.REACT_APP_BASE_URL}/posts/${id}`, postData, {
+        withCredentials: true,
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+      if (response.status === 200){
+        return navigate('/');
+      }
+    } catch(err) {
+      setError(err.response.data.message);
+    }
+  }
+
   return (
     <section className="create-post">
       <div className="container">
         <h2>Edit Post</h2>
-        <p className="form_error-message">This is an error message</p>
-        <form className="form create-post_form">
+        {error && <p className="form_error-message">{error}</p>}
+        <form className="form create-post_form" onSubmit={editPost}>
           <input type="text" placeholder="Title" value={title} onChange={e => setTitle(e.target.value)} autoFocus/>
           <select name="category" value={category} onChange={e => setCategory(e.target.value)}>
             {
