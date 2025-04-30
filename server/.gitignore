@@ -6,3 +6,6 @@
 /uploads/*
 # But allow .gitkeep
 !/uploads/.gitkeep
+
+# nvm configuration files
+.nvmrc
