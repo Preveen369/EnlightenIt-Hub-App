@@ -160,7 +160,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 1;
-  border-bottom: 4px solid var(--color-bg);
+  border-bottom: 2px solid var(--color-bg);
   backdrop-filter: blur(20px);
 }
 
@@ -263,11 +263,18 @@ body.dark-mode footer .footer_categories a:hover {
 body.dark-mode .post {
   background: var(--color-white);
   color: var(--color-gray-700);
-  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1); 
+  padding: 1rem;
+  padding-bottom: 2rem;
+  transition: var(--transition);
+  cursor: default;
 }
 
 .post:hover {
-  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .post:hover {
+  box-shadow: 0 1.5rem 2rem rgba(255, 255, 255, 0.25);
 }
 
 .post_thumbnail {
@@ -323,6 +330,11 @@ body.dark-mode .post .btn.category {
   background: var(--color-white);
   margin-inline: auto;
   padding: 2rem 0;
+  border-radius: 0.5rem;
+}
+
+.post-detail .post-detail_title{
+  color: var(--color-gray-700);
 }
 
 .post-detail_header {
@@ -341,6 +353,7 @@ body.dark-mode .post .btn.category {
   margin: 1rem 0;
   height: fit-content;
   max-height: 30rem;
+  border-radius: 0.5rem;
   overflow: hidden;
 }
 
@@ -582,6 +595,7 @@ body.dark-mode h1{
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+  margin-top:0.30rem;
   color: var(--color-gray-900);
   transition: var(--transition);
 }
@@ -626,7 +640,12 @@ body.dark-mode h1{
     transform: rotateX(90deg);
     transform-origin: top;
   }
-  
+
+  .theme-toggle-btn {
+    visibility: hidden;
+    display: none;
+  }
+
   @keyframes dropDown {
     to {
       opacity: 1;
@@ -649,13 +668,38 @@ body.dark-mode h1{
     background: var(--color-white);
     padding: 0.85rem 2.5rem;
   }
-  
+
+  .nav_menu li a:hover {
+    background: rgb(246, 246, 246);
+    transition: var(--transition);
+  }
+
   .nav_toggle-btn {
     display: inline-block;
     background: transparent;
     font-size: 1.5rem;
     cursor: pointer;
   }
+
+
+  /* Dark mode styles for navigation menu */
+  body.dark-mode .nav_menu li a {
+    background: #3a3a4d; 
+    color: var(--color-gray-700);
+    border: 1px solid #555566; 
+  }
+
+  /* Hover effect in dark mode */
+  body.dark-mode .nav_menu li a:hover {
+    background: #444455; 
+    color: var(--color-white); 
+  }
+
+  /* Navigation toggle menu button in dark mode */
+  body.dark-mode .nav_toggle-btn {
+    color: white;
+  }
+  
   
   .posts_container{
     grid-template-columns: 1fr;
@@ -674,6 +718,13 @@ body.dark-mode h1{
 
   .post-detail h1{
     margin-top: 1rem;
+  }
+
+  body.dark-mode .post-detail, 
+  body.dark-mode .post-detail .post-detail_title,
+  body.dark-mode .post_author-details h4,
+  body.dark-mode .post_author-details small{
+    color: white;
   }
 
   .register, .login, .create-post{

@@ -61,7 +61,7 @@ const Dashboard = () => {
                       alt=""
                     />
                   </div>
-                  <h5>{post.title}</h5>
+                  <h4>{post.title}</h4>
                 </div>
                 <div className="dashboard_post-actions">
                   <Link to={`/posts/${post._id}`} 

@@ -45,7 +45,7 @@ const PostDetail = () => {
             <DeletePost postId={id}/>
           </div>}
         </div>
-        <h1>{post.title}</h1>
+        <h1 className="post-detail_title">{post.title}</h1>
         <div className="post-detail_thumbnail">
           <img src={`${process.env.REACT_APP_ASSETS_URL}/uploads/${post?.thumbnail}`} alt="" />
         </div>
