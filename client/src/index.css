@@ -39,6 +39,15 @@ body {
   color: var(--color-gray-700);
 }
 
+body.dark-mode {
+  --color-bg: #1e1e2f;
+  --color-gray-700: #000000; 
+  --color-gray-900: #000000; 
+  --color-primary: #6f6af8; 
+  background: var(--color-bg);
+  color: var(--color-gray-700);
+}
+
 a {
   color: var(--color-gray-700);
   text-decoration: none;
@@ -48,12 +57,7 @@ ul {
   list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6 {
   color: var(--color-gray-900);
 }
 
@@ -128,7 +132,6 @@ section {
   color: var(--color-white);
 }
 
-
 .btn:hover {
   background: var(--color-gray-900);
   color: var(--color-white);
@@ -183,6 +186,11 @@ nav {
   display: none;
 }
 
+body.dark-mode nav .nav_menu li a,
+body.dark-mode .theme-toggle-btn {
+  color: var(--color-white); 
+}
+
 /* FOOTER */
 footer {
   background: var(--color-gray-900);
@@ -219,6 +227,23 @@ footer {
   font-weight: 300;
 }
 
+body.dark-mode footer {
+  background: #2c2c3e; 
+  color: var(--color-white); 
+  border-top: 1px solid #444455; 
+}
+
+body.dark-mode footer .footer_categories a {
+  background: #3a3a4d; 
+  color: var(--color-white); 
+  border: 1px solid #555566;
+}
+
+body.dark-mode footer .footer_categories a:hover {
+  background: #444455; 
+  color: var(--color-white); 
+}
+
 /* POSTS */
 .posts_container {
   display: grid;
@@ -233,6 +258,12 @@ footer {
   padding-bottom: 2rem;
   transition: var(--transition);
   cursor: default;
+}
+
+body.dark-mode .post {
+  background: var(--color-white);
+  color: var(--color-gray-700);
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1); 
 }
 
 .post:hover {
@@ -258,6 +289,12 @@ footer {
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+body.dark-mode .post .btn.category {
+  background: #3a3a4d;
+  color: var(--color-white);
+  border: 1px solid #555566; 
 }
 
 .post_footer {
@@ -354,6 +391,10 @@ textarea {
   margin-bottom: 2rem;
 }
 
+body.dark-mode h2{
+  color: var(--color-white);
+}
+
 .register small a,
 .login small a {
   color: var(--color-primary);
@@ -364,6 +405,11 @@ textarea {
   overflow: scroll;
   background: var(--color-white);
   height: 10rem !important;
+}
+
+/* FILE INPUT STYLES */
+.file_input{
+  color: var(--color-white);
 }
 
 /* AUTHORS */
@@ -414,6 +460,10 @@ textarea {
 
 .profile_details {
   width: 100%;
+}
+
+body.dark-mode h1{
+  color: var(--color-white);
 }
 
 .avatar_wrapper {
@@ -526,6 +576,19 @@ textarea {
   aspect-ratio: 1/1;
 }
 
+/* Style for the THEME toggle button */
+.theme-toggle-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--color-gray-900);
+  transition: var(--transition);
+}
+
+.theme-toggle-btn:hover {
+  color: var(--color-primary);
+}
 
 /* ---MEDIA QUERIES (small devices)--- */
 @media screen and (max-width: 800px) {

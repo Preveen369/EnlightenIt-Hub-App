@@ -99,7 +99,7 @@ const EditPost = () => {
           </select>
           <ReactQuill modules={modules} formats={formats} value={description} onChange={setDescription} 
           className="q1-editor"/>
-            <input type="file" onChange={e => setThumbnail(e.target.files[0])} accept='png, jpg, jpeg'/>
+            <input className="file_input" type="file" onChange={e => setThumbnail(e.target.files[0])} accept='png, jpg, jpeg'/>
             <button type="submit" className="btn primary">Update</button>
         </form>
       </div>

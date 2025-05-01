@@ -68,7 +68,7 @@ const Login = () => {
             Login
           </button>
         </form>
-        <small>
+        <small style={{color:"darkgrey"}}>
           Don't have an account? <Link to="/register">sign up</Link>
         </small>
       </div>

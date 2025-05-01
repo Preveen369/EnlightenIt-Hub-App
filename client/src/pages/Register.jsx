@@ -53,7 +53,9 @@ const Register = () => {
           onChange={changeInputHandler}/>
           <button type="submit" className="btn primary">Register</button>
         </form>
-        <small>Already have an account? <Link to="/login">sign in</Link></small>
+        <small style={{color:"darkgrey"}}>
+          Already have an account? <Link to="/login">sign in</Link>
+        </small>
       </div>
     </section>
   );
