@@ -49,7 +49,10 @@ const PostDetail = () => {
         <div className="post-detail_thumbnail">
           <img src={`${process.env.REACT_APP_ASSETS_URL}/uploads/${post?.thumbnail}`} alt="" />
         </div>
-        <p dangerouslySetInnerHTML={{__html: post.description}}></p>
+        <p
+            className="post_description"
+            dangerouslySetInnerHTML={{ __html: post.description }}
+          ></p>
       </div>}
     </section>
   );

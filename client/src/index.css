@@ -417,12 +417,13 @@ body.dark-mode h2{
 .q1-editor {
   overflow: scroll;
   background: var(--color-white);
-  height: 10rem !important;
+  height: 15rem !important;
 }
 
-/* FILE INPUT STYLES */
-.file_input{
-  color: var(--color-white);
+body.dark-mode .q1-editor {
+  overflow: scroll;
+  background: var(--color-white);
+  height: 15rem !important;
 }
 
 /* AUTHORS */
@@ -720,11 +721,15 @@ body.dark-mode h1{
     margin-top: 1rem;
   }
 
-  body.dark-mode .post-detail, 
   body.dark-mode .post-detail .post-detail_title,
   body.dark-mode .post_author-details h4,
-  body.dark-mode .post_author-details small{
-    color: white;
+  body.dark-mode .post_author-details small
+  {
+    color: var(--color-white) !important;
+  }
+
+  body.dark-mode .post_description * {
+    color: var(--color-white) !important;
   }
 
   .register, .login, .create-post{
