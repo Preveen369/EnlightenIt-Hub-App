@@ -9,8 +9,6 @@ import ru from 'javascript-time-ago/locale/ru.json';
 TimeAgo.addDefaultLocale(en);
 TimeAgo.addLocale(ru);
 
-// import Avatar from '../images/avatar1.jpg';
-
 const PostAuthor = ({authorID, createdAt}) => {
 const [author, setAuthor] = useState({});
 
@@ -40,7 +38,8 @@ const [author, setAuthor] = useState({});
   return (
     <Link to={`/posts/users/${authorID}`} className='post_author'>
         <div className="post_author-avatar">
-            <img src={`${process.env.REACT_APP_ASSETS_URL}/uploads/${author?.avatar}`} alt="" />
+          {/* Use the Cloudinary URL directly */}
+          <img src={author?.avatar} alt="" />
         </div>
         <div className="post_author-details">
             <h4>By: {author?.name}</h4>

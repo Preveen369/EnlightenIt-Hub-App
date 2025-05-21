@@ -2,10 +2,5 @@
 /node_modules
 .env
 
-# Ignore all files inside uploads folder
-/uploads/*
-# But allow .gitkeep
-!/uploads/.gitkeep
-
 # nvm configuration files
 .nvmrc

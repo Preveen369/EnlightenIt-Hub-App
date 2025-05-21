@@ -6,6 +6,7 @@ const {v4: uuid} = require('uuid')
 
 const User = require('../models/userModel')
 const HttpError = require('../models/errorModel')
+const cloudinary = require("../utils/cloudinaryConfig")
 
 // ---REGISTER A NEW USER ---
 // POST: api/users/register
@@ -93,7 +94,7 @@ const getUser = async (req, res, next) => {
 }
 
 
-// ---CHANGE USER AVATAR (profile picture)---
+// ---CHANGE USER AVATAR (profile picture)---  *****
 // POST: api/users/change-avatar
 // PROTECTED
 const changeAvatar = async (req, res, next) => {
@@ -101,49 +102,27 @@ const changeAvatar = async (req, res, next) => {
         if (!req.files || !req.files.avatar) {
             return next(new HttpError("Please choose an image.", 422));
         }
-
         const user = await User.findById(req.user.id);
         if (!user) {
             return next(new HttpError("User not found.", 404));
         }
-
-        // Delete old avatar if exists
-        if (user.avatar) {
-            const oldPath = path.join(__dirname, '..', 'uploads', user.avatar);
-            fs.unlink(oldPath, (err) => {
-                if (err) console.error("Failed to delete old avatar:", err.message);
-            });
-        }
-
         const { avatar } = req.files;
-
         if (avatar.size > 500000) {
             return next(new HttpError("Profile picture too big. Should be less than 500kb.", 422));
         }
-
-        const ext = path.extname(avatar.name);
-        const baseName = path.basename(avatar.name, ext);
-        const newFilename = baseName + '-' + uuid() + ext;
-
-        const uploadPath = path.join(__dirname, '..', 'uploads', newFilename);
-
-        await new Promise((resolve, reject) => {
-            avatar.mv(uploadPath, (err) => {
-                if (err) return reject(err);
-                resolve();
-            });
+        // Upload avatar to Cloudinary
+        const uploadResult = await cloudinary.uploader.upload(avatar.tempFilePath || avatar.path, {
+            folder: "enlightenit-hub/avatars",
+            public_id: uuid()
         });
-
         const updatedAvatar = await User.findByIdAndUpdate(
             req.user.id,
-            { avatar: newFilename },
+            { avatar: uploadResult.secure_url },
             { new: true }
         );
-
         if (!updatedAvatar) {
             return next(new HttpError("Avatar couldn't be changed.", 422));
         }
-
         res.status(200).json(updatedAvatar);
     } catch (error) {
         return next(new HttpError(error.message || "Failed to change avatar.", 500));

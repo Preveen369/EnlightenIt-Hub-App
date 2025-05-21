@@ -8,16 +8,19 @@ const PostItem = ({ postID, thumbnail, category, title, description, authorID, c
   return (
     <article className="post">
       <div className="post_thumbnail">
-        <img src={`${process.env.REACT_APP_ASSETS_URL}/uploads/${thumbnail}`} alt={title} />
+        {/* Use the full Cloudinary URL stored in thumbnail */}
+        <img src={thumbnail} alt={title} />
       </div>
       <div className="post_content">
         <Link to={`/posts/${postID}`}>
-            <h3>{postTitle}</h3>
+          <h3>{postTitle}</h3>
         </Link>
-        <p dangerouslySetInnerHTML={{__html :shortDescription}}/>
+        <p dangerouslySetInnerHTML={{ __html: shortDescription }} />
         <div className="post_footer">
-            <PostAuthor authorID = {authorID} createdAt={createdAt}/>
-            <Link to={`/posts/categories/${category}`} className="btn category">{category}</Link>
+          <PostAuthor authorID={authorID} createdAt={createdAt} />
+          <Link to={`/posts/categories/${category}`} className="btn category">
+            {category}
+          </Link>
         </div>
       </div>
     </article>
