@@ -1,7 +1,5 @@
 const Post = require("../models/postModel")
 const User = require("../models/userModel")
-const fs = require('fs')
-const path = require('path')
 const { v4: uuid } = require('uuid')
 const HttpError = require('../models/errorModel')
 const cloudinary = require("../utils/cloudinaryConfig")
