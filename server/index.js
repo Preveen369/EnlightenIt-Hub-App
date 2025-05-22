@@ -11,7 +11,7 @@ const app=express();
 app.use(express.json({extended:true}));
 app.use(express.urlencoded({extended:true}));
 app.use(cors({credentials:true, origin: "https://enlightenit-hub-app.onrender.com"}));
-
+app.use(fileUpload({ useTempFiles: true })); // <-- add this middleware
 
 app.use('/api/users', userRoutes);
 app.use('/api/posts', postRoutes);
