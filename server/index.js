@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const {connect} = require('mongoose');
 require('dotenv').config();
-
+const fileUpload = require('express-fileupload'); 
 const userRoutes = require('./routes/userRoutes');
 const postRoutes = require('./routes/postRoutes');
 const { notFound, errorHandler } = require('./middleware/errorMiddleware');

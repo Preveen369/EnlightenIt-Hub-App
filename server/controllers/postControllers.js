@@ -110,7 +110,7 @@ const getUserPosts = async (req, res, next) => {
 const editPost = async (req, res, next) => {
     try {
         const postId = req.params.id;
-        let { title, category, description } = req.body;
+        const { title, category, description } = req.body;
         if (!title || !category || !description || description.length < 12) {
             return next(new HttpError("Fill in all the fields properly.", 422));
         }
