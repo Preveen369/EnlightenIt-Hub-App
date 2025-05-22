@@ -41,6 +41,7 @@ const Header = () => {
       <div className="container nav_container">
         <Link to="/" className="nav_logo" onClick={closeNavHandler}>
           <img src={logo} alt="Navbar Logo" />
+                    <span className="logo-title">EnlightenIt Hub Blogs</span>
         </Link>
 
         {currentUser?.id && isNavShowing && (

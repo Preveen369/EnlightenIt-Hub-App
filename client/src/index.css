@@ -150,6 +150,7 @@ section {
 }
 
 /* NAVBAR */
+
 nav {
   width: 100vw;
   height: 5rem;
@@ -173,7 +174,21 @@ nav {
 
 .nav_logo {
   width: 3rem;
-  display: block;
+  display: flex;
+  align-items: center;
+}
+
+.logo-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-left: 10px;
+  color: #333;
+  align-self: center;
+}
+
+/* Dark mode overrides */
+body.dark-mode .logo-title {
+  color: #f1f1f1;
 }
 
 .nav_menu {
