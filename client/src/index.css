@@ -915,13 +915,13 @@ body.dark-mode .landing-hero-bg .landing-title {
 /* Make landing page navbar use --color-bg as background, opaque, only on landing page */
 .landing-hero nav {
   background: var(--color-bg) !important;
-  box-shadow: 0 2px 16px rgba(60,60,120,0.08);
-  backdrop-filter: none !important;
+  /*box-shadow: 0 2px 16px rgba(60,60,120,0.08);*/
+  /*backdrop-filter: none !important;*/
 }
 
 body.dark-mode .landing-hero nav {
   background: var(--color-bg) !important;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  /*box-shadow: 0 2px 16px rgba(0,0,0,0.18);*/
 }
 
 @media (max-width: 900px) {
