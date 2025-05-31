@@ -658,6 +658,7 @@ body.dark-mode h1{
     right: 0;
     flex-direction: column;
     gap: 0;
+    z-index: 10; /* Ensure nav menu overlays landing image on mobile */
   }
   
   .nav_menu li {
@@ -900,6 +901,28 @@ body.dark-mode h1{
   color: #334155;
   font-size: 1rem;
 }
+
+/* Theme-aware text color for landing page image section */
+.landing-hero-bg .landing-hero-content,
+.landing-hero-bg .landing-title,
+.landing-hero-bg .landing-subtitle {
+  color: #fff;
+}
+body.dark-mode .landing-hero-bg .landing-hero-content,
+body.dark-mode .landing-hero-bg .landing-title,
+body.dark-mode .landing-hero-bg .landing-subtitle {
+  color: #e0e7ff;
+}
+
+.landing-hero-bg .landing-title {
+  color: var(--color-primary);
+  text-shadow: 0 2px 16px rgba(60,60,120,0.18), 0 1px 0 #fff;
+}
+body.dark-mode .landing-hero-bg .landing-title {
+  color: #a5b4fc;
+  text-shadow: 0 2px 16px rgba(30,30,60,0.38), 0 1px 0 #23233a;
+}
+
 @media (max-width: 900px) {
   .landing-features {
     flex-direction: column;
