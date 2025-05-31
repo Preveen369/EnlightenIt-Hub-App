@@ -799,20 +799,13 @@ body.dark-mode h1{
   align-items: stretch;
 }
 .landing-hero-bg {
-  background: url('./images/blog1.jpg') center/cover no-repeat;
+  background: linear-gradient(120deg, rgba(99,102,241,0.18) 0%, rgba(40,40,80,0.38) 100%), url('./images/blog1.jpg') center/cover no-repeat;
   min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   padding-top: 5rem; /* Ensure navbar does not overlap hero bg */
-}
-.landing-hero-bg::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(40, 40, 80, 0.55);
-  z-index: 1;
 }
 .landing-hero-content {
   position: relative;
