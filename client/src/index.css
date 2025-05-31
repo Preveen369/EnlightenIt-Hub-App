@@ -806,6 +806,7 @@ body.dark-mode h1{
   justify-content: center;
   position: relative;
   padding-top: 5rem; /* Ensure navbar does not overlap hero bg */
+  z-index: 0; /* Push image further behind */
 }
 .landing-hero-content {
   position: relative;
