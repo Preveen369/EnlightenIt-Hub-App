@@ -209,12 +209,14 @@ body.dark-mode .theme-toggle-btn {
 /* Make navbar opaque only on landing page */
 .landing-hero nav {
   background: #fff !important;
+  opacity: 1 !important;
   box-shadow: 0 2px 16px rgba(60,60,120,0.08);
   backdrop-filter: none !important;
 }
 
 body.dark-mode .landing-hero nav {
   background: #23233a !important;
+  opacity: 1 !important;
   box-shadow: 0 2px 16px rgba(0,0,0,0.18);
 }
 
