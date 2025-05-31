@@ -206,17 +206,6 @@ body.dark-mode .theme-toggle-btn {
   color: var(--color-white); 
 }
 
-/* Make navbar opaque only on landing page */
-.landing-hero nav {
-  background: #fff !important;
-  box-shadow: 0 2px 16px rgba(60,60,120,0.08);
-  backdrop-filter: none !important;
-}
-
-body.dark-mode .landing-hero nav {
-  background: #23233a !important;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
-}
 
 /* FOOTER */
 footer {
@@ -875,7 +864,7 @@ body.dark-mode h1{
   display: flex;
   gap: 2rem;
   justify-content: center;
-  margin-top: -3rem;
+  margin-top: 2rem;
   background: #fff;
   border-radius: 1.5rem;
   box-shadow: 0 4px 24px rgba(60,60,120,0.08);
