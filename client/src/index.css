@@ -778,5 +778,12 @@ body.dark-mode h1{
     width: 5rem;
   }
   
+  .q1-editor {
+    min-height: 8rem !important;
+    height: 8rem !important;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  
 }
 
