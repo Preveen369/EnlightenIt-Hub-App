@@ -912,18 +912,23 @@ body.dark-mode .landing-hero-bg .landing-title {
   text-shadow: 0 2px 16px rgba(30,30,60,0.38), 0 1px 0 #23233a;
 }
 
-/* Make landing page navbar use --color-bg as background, opaque, only on landing page */
+/* Make landing page navbar fixed, solid background, no box shadow, no transparency */
 .landing-hero nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   background: var(--color-bg) !important;
-  box-shadow: 0 2px 16px rgba(60,60,120,0.08);
   border-bottom: 2px solid #e0e7ff;
+  box-shadow: none !important;
   backdrop-filter: none !important;
+  z-index: 100;
 }
 
 body.dark-mode .landing-hero nav {
   background: var(--color-bg) !important;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
   border-bottom: 2px solid #23233a;
+  box-shadow: none !important;
 }
 
 /* ---MEDIA QUERIES (small devices)--- */
@@ -1217,17 +1222,332 @@ body.dark-mode .landing-hero-bg .landing-title {
   text-shadow: 0 2px 16px rgba(30,30,60,0.38), 0 1px 0 #23233a;
 }
 
-/* Make landing page navbar use --color-bg as background, opaque, only on landing page */
+/* Make landing page navbar fixed, solid background, no box shadow, no transparency */
 .landing-hero nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   background: var(--color-bg) !important;
-  box-shadow: 0 2px 16px rgba(60,60,120,0.08);
   border-bottom: 2px solid #e0e7ff;
+  box-shadow: none !important;
   backdrop-filter: none !important;
+  z-index: 100;
 }
 
 body.dark-mode .landing-hero nav {
   background: var(--color-bg) !important;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
   border-bottom: 2px solid #23233a;
+  box-shadow: none !important;
+}
+
+/* ---MEDIA QUERIES (small devices)--- */
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.35rem;
+  }
+  .container {
+    width: var(--container-width-md);
+  }
+
+  /* NAVBAR */
+  .nav_container {
+    position: relative;
+  }
+  
+  .nav_menu {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    z-index: 10; /* Ensure nav menu overlays landing image on mobile */
+  }
+  
+  .nav_menu li {
+    width: 100%;
+    box-shadow: -2rem 4rem 4rem rgba(0, 0, 0, 0.26);
+    animation: dropDown 500ms ease forwards;
+    opacity: 0;
+    transform: rotateX(90deg);
+    transform-origin: top;
+  }
+
+  .theme-toggle-btn {
+    visibility: hidden;
+    display: none;
+  }
+
+  @keyframes dropDown {
+    to {
+      opacity: 1;
+      transform: rotateX(0);
+    }
+  }
+  
+  .nav_menu li:nth-child(2) {
+    animation-delay: 300ms;
+  }
+  .nav_menu li:nth-child(3) {
+    animation-delay: 600ms;
+  }
+  .nav_menu li:nth-child(4) {
+    animation-delay: 900ms;
+  }
+  
+  .nav_menu li a {
+    display: block;
+    background: var(--color-white);
+    padding: 0.85rem 2.5rem;
+  }
+
+  .nav_menu li a:hover {
+    background: rgb(246, 246, 246);
+    transition: var(--transition);
+  }
+
+  .nav_toggle-btn {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+
+  /* Dark mode styles for navigation menu */
+  body.dark-mode .nav_menu li a {
+    background: #3a3a4d; 
+    color: var(--color-gray-700);
+    border: 1px solid #555566; 
+  }
+
+  /* Hover effect in dark mode */
+  body.dark-mode .nav_menu li a:hover {
+    background: #444455; 
+    color: var(--color-white); 
+  }
+
+  /* Navigation toggle menu button in dark mode */
+  body.dark-mode .nav_toggle-btn {
+    color: white;
+  }
+  
+  
+  .posts_container{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .footer_categories{
+    flex-direction: column;
+  }
+  
+  .post-detail{
+    width:100%;
+    background: transparent;
+    padding: 0;
+  }
+
+  .post-detail h1{
+    margin-top: 1rem;
+  }
+
+  body.dark-mode .post-detail .post-detail_title,
+  body.dark-mode .post_author-details h4,
+  body.dark-mode .post_author-details small
+  {
+    color: var(--color-white) !important;
+  }
+
+  body.dark-mode .post_description * {
+    color: var(--color-white) !important;
+  }
+
+  .register, .login, .create-post{
+    width: 100%
+  }
+
+  .form.profile_form{
+    width: 100%;
+    margin-top: 2.5rem;
+  }
+
+  .authors_container{
+    grid-template-columns: 1fr;
+    gap: 1.2rem
+  }
+
+  .dashboard_container{
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .dashboard_post{
+    flex-direction: column;
+  }
+
+  .dashboard_post-info{
+    gap: 1.5rem;
+  }
+
+  .dashboard_post-thumbnail{
+    width: 5rem;
+  }
+  
+  .q1-editor {
+    min-height: 8rem !important;
+    height: 8rem !important;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  
+}
+
+/* Landing Page Styles */
+.landing-hero {
+  min-height: 100vh;
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.landing-hero-bg {
+  background: url('./images/blog1.jpg') center/cover no-repeat;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.landing-hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(40, 40, 80, 0.55);
+  z-index: 1;
+}
+.landing-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  padding: 4rem 2rem 2rem 2rem;
+}
+.landing-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.landing-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: #e0e7ff;
+}
+.landing-cta {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.landing-btn {
+  font-size: 1.1rem;
+  padding: 0.8rem 2.2rem;
+  border-radius: 2rem;
+  box-shadow: 0 2px 12px rgba(60,60,120,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+.landing-btn.primary {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+}
+.landing-btn.primary:hover {
+  background: #4338ca;
+}
+.landing-btn.secondary {
+  background: #fff;
+  color: #6366f1;
+  border: 1px solid #6366f1;
+}
+.landing-btn.secondary:hover {
+  background: #e0e7ff;
+}
+.landing-features {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(60,60,120,0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  position: relative;
+  z-index: 0;
+}
+.feature-card {
+  flex: 1 1 200px;
+  background: #f1f5f9;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(60,60,120,0.04);
+  margin: 0 0.5rem;
+}
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+  color: #6366f1;
+}
+.feature-card p {
+  color: #334155;
+  font-size: 1rem;
+}
+
+/* Theme-aware text color for landing page image section */
+.landing-hero-bg .landing-hero-content,
+.landing-hero-bg .landing-title,
+.landing-hero-bg .landing-subtitle {
+  color: #fff;
+}
+body.dark-mode .landing-hero-bg .landing-hero-content,
+body.dark-mode .landing-hero-bg .landing-title,
+body.dark-mode .landing-hero-bg .landing-subtitle {
+  color: #e0e7ff;
+}
+
+.landing-hero-bg .landing-title {
+  color: var(--color-primary);
+  text-shadow: 0 2px 16px rgba(60,60,120,0.18), 0 1px 0 #fff;
+}
+body.dark-mode .landing-hero-bg .landing-title {
+  color: #a5b4fc;
+  text-shadow: 0 2px 16px rgba(30,30,60,0.38), 0 1px 0 #23233a;
+}
+
+/* Make landing page navbar fixed, solid background, no box shadow, no transparency */
+.landing-hero nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: var(--color-bg) !important;
+  border-bottom: 2px solid #e0e7ff;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  z-index: 100;
+}
+
+body.dark-mode .landing-hero nav {
+  background: var(--color-bg) !important;
+  border-bottom: 2px solid #23233a;
+  box-shadow: none !important;
 }
 
