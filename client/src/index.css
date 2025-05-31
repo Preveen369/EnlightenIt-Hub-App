@@ -820,7 +820,7 @@ body.dark-mode h1{
   position: relative;
   z-index: 2;
   text-align: center;
-  color: #252542; /* Use a dark, readable color for light theme */
+  color: #18192a; /* Slightly darker for better contrast in light theme */
   padding: 4rem 2rem 2rem 2rem;
 }
 body.dark-mode .landing-hero-content {
