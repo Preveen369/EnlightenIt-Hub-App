@@ -987,3 +987,24 @@ body.dark-mode .landing-hero nav {
   }
 }
 
+/* Accessibility improvements for landing page navbar links */
+.landing-hero nav .nav_menu a,
+.landing-hero nav .nav_menu button {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition: outline 0.2s;
+}
+.landing-hero nav .nav_menu a:focus-visible,
+.landing-hero nav .nav_menu button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  background: #e0e7ff;
+  color: #252542;
+}
+body.dark-mode .landing-hero nav .nav_menu a:focus-visible,
+body.dark-mode .landing-hero nav .nav_menu button:focus-visible {
+  outline: 2px solid #a5b4fc;
+  background: #23233a;
+  color: #fff;
+}
+
