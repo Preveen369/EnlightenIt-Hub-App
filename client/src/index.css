@@ -206,6 +206,38 @@ body.dark-mode .theme-toggle-btn {
   color: var(--color-white); 
 }
 
+.nav_actions {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    position: absolute;
+    right: 1rem;
+    top: 0.7rem;
+    z-index: 2;
+  }
+
+  .theme-toggle-btn {
+    visibility: visible;
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 0.5rem;
+    order: 1;
+    color: var(--color-gray-900);
+    background: transparent;
+    font-size: 1.5rem;
+    transition: var(--transition);
+  }
+
+  .nav_toggle-btn {
+    order: 2;
+    margin-left: 0;
+  }
+
+  /* Dark mode for theme toggle */
+  body.dark-mode .theme-toggle-btn {
+    color: var(--color-white);
+  }
+
 /* FOOTER */
 footer {
   background: var(--color-gray-900);
@@ -658,8 +690,20 @@ body.dark-mode h1{
   }
 
   .theme-toggle-btn {
-    visibility: hidden;
-    display: none;
+    visibility: visible;
+    display: inline-block;
+    margin-top: 0;
+    margin-right: 0.5rem;
+    order: 1;
+    color: var(--color-gray-900);
+    background: transparent;
+    font-size: 1.5rem;
+    transition: var(--transition);
+  }
+
+  .nav_toggle-btn {
+    order: 2;
+    margin-left: 0;
   }
 
   @keyframes dropDown {
