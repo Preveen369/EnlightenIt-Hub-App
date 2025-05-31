@@ -804,7 +804,7 @@ body.dark-mode h1{
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: static;
 }
 .landing-hero-bg::before {
   content: '';
@@ -912,9 +912,9 @@ body.dark-mode .landing-hero-bg .landing-title {
   text-shadow: 0 2px 16px rgba(30,30,60,0.38), 0 1px 0 #23233a;
 }
 
-/* Ensure landing page navbar is always visible and accessible, and links are accessible */
+/* Make landing page navbar use --color-bg as background, opaque, only on landing page */
 .landing-hero nav {
-  position: fixed !important;
+  position: sticky !important;
   top: 0;
   left: 0;
   width: 100vw;
@@ -923,7 +923,7 @@ body.dark-mode .landing-hero-bg .landing-title {
 }
 
 body.dark-mode .landing-hero nav {
-  position: fixed !important;
+  position: sticky !important;
   top: 0;
   left: 0;
   width: 100vw;
@@ -931,6 +931,63 @@ body.dark-mode .landing-hero nav {
   z-index: 200;
 }
 
+@media (max-width: 900px) {
+  .landing-hero {
+    min-height: 100vh;
+    padding-top: 0;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .landing-hero-bg {
+    min-height: 40vh;
+    padding: 0;
+    background-position: center;
+  }
+  .landing-hero-content {
+    padding: 2.5rem 1rem 1.5rem 1rem;
+  }
+  .landing-title {
+    font-size: 2.1rem;
+    margin-bottom: 0.7rem;
+  }
+  .landing-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+  }
+  .landing-cta {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+  .landing-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.7rem 0;
+  }
+  .landing-features {
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1rem;
+    padding: 1.2rem 0.3rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(60,60,120,0.06);
+  }
+  .feature-card {
+    margin: 0;
+    padding: 1.2rem 0.7rem;
+    border-radius: 0.7rem;
+    font-size: 0.97rem;
+  }
+  .feature-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  .feature-card p {
+    font-size: 0.97rem;
+  }
+}
+
+/* Accessibility improvements for landing page navbar links */
 .landing-hero nav .nav_menu a,
 .landing-hero nav .nav_menu button {
   outline: 2px solid transparent;
@@ -949,15 +1006,5 @@ body.dark-mode .landing-hero nav .nav_menu button:focus-visible {
   outline: 2px solid #a5b4fc;
   background: #23233a;
   color: #fff;
-}
-
-/* Add padding to landing-hero to prevent content from being hidden under fixed navbar */
-.landing-hero {
-  padding-top: 5rem;
-}
-@media (max-width: 900px) {
-  .landing-hero {
-    padding-top: 4.5rem;
-  }
 }
 
