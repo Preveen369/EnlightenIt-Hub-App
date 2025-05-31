@@ -206,6 +206,18 @@ body.dark-mode .theme-toggle-btn {
   color: var(--color-white); 
 }
 
+/* Make navbar opaque only on landing page */
+.landing-hero nav {
+  background: #fff !important;
+  box-shadow: 0 2px 16px rgba(60,60,120,0.08);
+  backdrop-filter: none !important;
+}
+
+body.dark-mode .landing-hero nav {
+  background: #23233a !important;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+
 /* FOOTER */
 footer {
   background: var(--color-gray-900);
@@ -868,7 +880,7 @@ body.dark-mode h1{
   box-shadow: 0 4px 24px rgba(60,60,120,0.08);
   padding: 2.5rem 2rem 2rem 2rem;
   position: relative;
-  z-index: 3;
+  z-index: 0;
 }
 .feature-card {
   flex: 1 1 200px;
