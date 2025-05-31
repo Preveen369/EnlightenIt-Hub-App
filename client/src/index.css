@@ -209,14 +209,12 @@ body.dark-mode .theme-toggle-btn {
 /* Make navbar opaque only on landing page */
 .landing-hero nav {
   background: #fff !important;
-  opacity: 1 !important;
   box-shadow: 0 2px 16px rgba(60,60,120,0.08);
   backdrop-filter: none !important;
 }
 
 body.dark-mode .landing-hero nav {
   background: #23233a !important;
-  opacity: 1 !important;
   box-shadow: 0 2px 16px rgba(0,0,0,0.18);
 }
 
@@ -824,7 +822,7 @@ body.dark-mode h1{
   position: absolute;
   inset: 0;
   background: rgba(40, 40, 80, 0.55);
-  z-index: 0;
+  z-index: 1;
 }
 .landing-hero-content {
   position: relative;
@@ -883,7 +881,7 @@ body.dark-mode h1{
   box-shadow: 0 4px 24px rgba(60,60,120,0.08);
   padding: 2.5rem 2rem 2rem 2rem;
   position: relative;
-  z-index: 1;
+  z-index: 0;
 }
 .feature-card {
   flex: 1 1 200px;
