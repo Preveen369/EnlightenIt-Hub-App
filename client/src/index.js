@@ -19,6 +19,7 @@ import EditPost from './pages/EditPost';
 import DeletePost from './pages/DeletePost';
 import Logout from './pages/Logout';
 import UserProvider from './context/userContext';
+import LandingPage from './pages/LandingPage';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,8 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ErrorPage />,
     children: [
-      {index: true, element: <Home/>},
+      {index: true, element: <LandingPage/>},
+      {path: "home", element: <Home/>},
       {path: "posts/:id", element: <PostDetail/>},
       {path: "register", element: <Register/>},
       {path: "login", element: <Login/>},
