@@ -822,7 +822,7 @@ body.dark-mode h1{
   position: absolute;
   inset: 0;
   background: rgba(40, 40, 80, 0.55);
-  z-index: 1;
+  z-index: 0;
 }
 .landing-hero-content {
   position: relative;
@@ -881,7 +881,7 @@ body.dark-mode h1{
   box-shadow: 0 4px 24px rgba(60,60,120,0.08);
   padding: 2.5rem 2rem 2rem 2rem;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 .feature-card {
   flex: 1 1 200px;
