@@ -34,6 +34,7 @@ body.dark-mode {
   color: var(--color-gray-700);
 }
 
+
 /* =====================
    RESET & BASE STYLES
    ===================== */
@@ -78,6 +79,7 @@ section { margin-top: 6rem; }
   margin-inline: auto;
 }
 
+
 /* =====================
    BUTTONS
    ===================== */
@@ -116,6 +118,7 @@ section { margin-top: 6rem; }
   color: var(--color-white);
 }
 
+
 /* =====================
    TYPOGRAPHY & UTILS
    ===================== */
@@ -127,6 +130,7 @@ section { margin-top: 6rem; }
   width: 100%;
 }
 .error-page h2 { margin-top: 3rem; }
+
 
 /* =====================
    NAVBAR
@@ -173,6 +177,7 @@ body.dark-mode nav .nav_menu li a,
 body.dark-mode .theme-toggle-btn { 
   color: var(--color-white);
 }
+
 
 /* =====================
    FOOTER
@@ -221,6 +226,7 @@ body.dark-mode footer .footer_categories a:hover {
   background: #444455;
   color: var(--color-white);
 }
+
 
 /* =====================
    POSTS & POST DETAILS
@@ -288,6 +294,7 @@ body.dark-mode .post .btn.category {
   overflow: hidden;
 }
 
+
 /* POST DETAILS */
 .post-detail {
   width: var(--form-width);
@@ -315,6 +322,7 @@ body.dark-mode .post .btn.category {
   overflow: hidden;
 }
 .post-detail p { margin-bottom: 0.7rem; }
+
 
 /* =====================
    FORMS
@@ -351,6 +359,7 @@ input, select, textarea {
 body.dark-mode h2 { color: var(--color-white); }
 .register small a, .login small a { color: var(--color-primary); }
 
+
 /* =====================
    REACT QUILL EDITOR
    ===================== */
@@ -366,6 +375,7 @@ body.dark-mode .q1-editor {
   height: 15rem !important;
   resize: vertical; /* Allow vertical resizing */
 }
+
 
 /* =====================
    AUTHORS
@@ -400,6 +410,7 @@ body.dark-mode .q1-editor {
   object-position: center;
 }
 .author_info p { margin-top: 0.5rem; }
+
 
 /* =====================
    USER PROFILE
@@ -452,6 +463,7 @@ body.dark-mode h1 { color: var(--color-white); }
   width: var(--form-width);
 }
 
+
 /* =====================
    DASHBOARD
    ===================== */
@@ -485,6 +497,7 @@ body.dark-mode h1 { color: var(--color-white); }
   gap: 1rem;
 }
 
+
 /* =====================
    LOADER
    ===================== */
@@ -503,6 +516,7 @@ body.dark-mode h1 { color: var(--color-white); }
   aspect-ratio: 1/1;
 }
 
+
 /* =====================
    THEME TOGGLE BUTTON
    ===================== */
@@ -516,6 +530,7 @@ body.dark-mode h1 { color: var(--color-white); }
   transition: var(--transition);
 }
 .theme-toggle-btn:hover { color: var(--color-primary); }
+
 
 /* =====================
    MEDIA QUERIES (small devices)
@@ -599,6 +614,7 @@ body.dark-mode h1 { color: var(--color-white); }
     padding: 0.5rem;
   }
 }
+
 
 /* =====================
    LANDING PAGE STYLES
