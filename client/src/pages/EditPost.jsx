@@ -90,7 +90,7 @@ const EditPost = () => {
   }
 
   return (
-    <section className="create-post">
+    <section className="create-post edit-post">
       <div className="container">
         <h2>Edit Post</h2>
         {error && <p className="form_error-message">{error}</p>}

@@ -339,7 +339,7 @@ input, select, textarea {
   display: block;
   margin-bottom: 1rem;
 }
-.register, .login, .create-post {
+.register, .login, .create-post, .edit-post {
   width: var(--form-width);
   margin-inline: auto;
   height: calc(100vh - 12rem);
@@ -347,7 +347,7 @@ input, select, textarea {
   display: grid;
   place-items: center;
 }
-.register h2, .login h2, .create-post h2 { margin-bottom: 2rem; }
+.register h2, .login h2, .create-post h2, .edit-post h2 { margin-bottom: 2rem; }
 body.dark-mode h2 { color: var(--color-white); }
 .register small a, .login small a { color: var(--color-primary); }
 
@@ -585,7 +585,7 @@ body.dark-mode h1 { color: var(--color-white); }
   body.dark-mode .post_author-details h4,
   body.dark-mode .post_author-details small { color: var(--color-white) !important; }
   body.dark-mode .post_description * { color: var(--color-white) !important; }
-  .register, .login, .create-post { width: 100%; }
+  .register, .login, .create-post, .edit-post { width: 100%; }
   .form.profile_form { width: 100%; margin-top: 2.5rem; }
   .authors_container { grid-template-columns: 1fr; gap: 1.2rem; }
   .dashboard_container { grid-template-columns: 1fr; gap: 1.2rem; }
@@ -810,5 +810,25 @@ body.dark-mode .landing-hero nav .nav_menu button:focus-visible {
   outline: 2px solid #a5b4fc;
   background: #23233a;
   color: #fff;
+}
+@media screen and (max-width: 800px) and (orientation: landscape) {
+  .register, .login, .create-post, .edit-post {
+    width: 90%;
+    height: auto;
+    padding: 1.5rem 1rem;
+  }
+  .create-post_form, .edit-post_form {
+    gap: 0.5rem;
+  }
+  .create-post_form input, .edit-post_form input,
+  .create-post_form select, .edit-post_form select,
+  .create-post_form .q1-editor, .edit-post_form .q1-editor {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  .create-post_form button, .edit-post_form button {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
 }
 
