@@ -348,10 +348,10 @@ input, select, textarea {
   margin-bottom: 1rem;
 }
 .register, .login, .create-post, .edit-post {
-  width: var(--form-width);
+  width: 100%;
   margin-inline: auto;
   height: calc(100vh - 12rem);
-  padding: 2rem 0;
+  padding: 1rem;
   display: grid;
   place-items: center;
 }
@@ -612,6 +612,36 @@ body.dark-mode h1 { color: var(--color-white); }
     height: 8rem !important;
     font-size: 1rem;
     padding: 0.5rem;
+  }
+  .edit-post {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .edit-post h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .form.create-post_form {
+    gap: 0.5rem;
+  }
+
+  .form.create-post_form input,
+  .form.create-post_form select,
+  .form.create-post_form .q1-editor {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+    width: 100%;
+  }
+
+  .form.create-post_form button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .q1-editor {
+    height: 10rem !important;
   }
 }
 

@@ -74,7 +74,7 @@ const CreatePost = () => {
   }
 
   return (
-    <section className="create-post">
+    <section className="create-post create-post_form">
       <div className="container">
         <h2>Create Post</h2>
         {error &&  <p className="form_error-message">{error}</p>}
