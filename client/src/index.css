@@ -170,7 +170,9 @@ body.dark-mode .logo-title { color: #f1f1f1; }
 }
 .nav_toggle-btn { display: none; }
 body.dark-mode nav .nav_menu li a,
-body.dark-mode .theme-toggle-btn { color: var(--color-white); }
+body.dark-mode .theme-toggle-btn { 
+  color: var(--color-white);
+}
 
 /* =====================
    FOOTER
