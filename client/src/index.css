@@ -639,8 +639,16 @@ body.dark-mode .landing-hero-content { color: #e0e7ff; }
   margin-bottom: 1rem;
   letter-spacing: 1px;
 }
+.landing-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  color: #4338ca; 
+}
+
 .landing-hero-bg .landing-title {
-  color: #4338ca;
+  color: #4338ca; 
 }
 body.dark-mode .landing-hero-bg .landing-title {
   color: #a5b4fc;
