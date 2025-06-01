@@ -358,11 +358,13 @@ body.dark-mode h2 { color: var(--color-white); }
   overflow: scroll;
   background: var(--color-white);
   height: 15rem !important;
+  resize: vertical; /* Allow vertical resizing */
 }
 body.dark-mode .q1-editor {
   overflow: scroll;
   background: var(--color-white);
   height: 15rem !important;
+  resize: vertical; /* Allow vertical resizing */
 }
 
 /* =====================
