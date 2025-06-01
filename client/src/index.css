@@ -178,27 +178,32 @@ body.dark-mode .theme-toggle-btn { color: var(--color-white); }
 footer {
   background: var(--color-gray-900);
   margin-top: 6rem;
-  padding: 2rem 1rem; /* Adjust padding for better responsiveness */
-  text-align: center; /* Center-align content for smaller screens */
+  padding-top: 6rem;
 }
 .footer_categories {
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
   align-items: center;
   justify-content: center;
-  gap: 1rem; /* Adjust gap for better spacing */
-  margin-bottom: 2rem; /* Reduce margin for smaller screens */
+  gap: 1.5rem;
+  margin-bottom: 4rem;
 }
 .footer_categories a {
-  flex: 1 1 auto; /* Allow links to adjust size dynamically */
-  max-width: 150px; /* Set a max width for links */
-  text-align: center; /* Center-align text */
+  background: var(--color-gray-700);
+  color: var(--color-white);
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius-2);
+  transition: var(--transition);
+}
+.footer_categories a:hover {
+  background: var(--color-white);
+  color: var(--color-gray-900);
 }
 .footer_copyright {
   text-align: center;
   border-top: 2px solid var(--color-gray-700);
   padding: 1rem;
-  font-size: 0.8rem; /* Adjust font size for smaller screens */
+  color: var(--color-white);
+  font-weight: 300;
 }
 body.dark-mode footer {
   background: #2c2c3e;
@@ -213,23 +218,6 @@ body.dark-mode footer .footer_categories a {
 body.dark-mode footer .footer_categories a:hover {
   background: #444455;
   color: var(--color-white);
-}
-/* Responsive styles for footer */
-@media screen and (max-width: 800px) {
-  footer {
-    padding: 1.5rem 0.5rem; /* Reduce padding for smaller screens */
-  }
-  .footer_categories {
-    flex-direction: column; /* Stack categories vertically */
-    gap: 0.8rem; /* Adjust gap for smaller screens */
-  }
-  .footer_categories a {
-    width: 100%; /* Make links take full width */
-    max-width: none; /* Remove max width constraint */
-  }
-  .footer_copyright {
-    font-size: 0.7rem; /* Further reduce font size */
-  }
 }
 
 /* =====================
