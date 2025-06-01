@@ -621,7 +621,7 @@ body.dark-mode h1 { color: var(--color-white); }
   content: '';
   position: absolute;
   inset: 0;
-  background: url('./images/blog1.jpg') center/cover no-repeat;
+  background: url('./images/blog8.jpg') center/cover no-repeat;
   opacity: 0.35;
   z-index: 0;
 }
