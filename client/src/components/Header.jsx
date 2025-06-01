@@ -41,12 +41,8 @@ const Header = () => {
       <div className="container nav_container">
         <Link to="/" className="nav_logo" onClick={closeNavHandler}>
           <img src={logo} alt="Navbar Logo" />
-          <span className="logo-title">EnlightenIt Hub Blogs</span>
+                    <span className="logo-title">EnlightenIt Hub Blogs</span>
         </Link>
-
-        <button className="theme-toggle-btn mobile-only" onClick={toggleTheme}>
-          {isDarkMode ? <BsSun /> : <BsMoon />}
-        </button>
 
         {currentUser?.id && isNavShowing && (
           <ul className="nav_menu">

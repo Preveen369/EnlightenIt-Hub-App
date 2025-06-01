@@ -168,28 +168,7 @@ body.dark-mode .logo-title { color: #f1f1f1; }
   align-items: center;
   gap: 3rem;
 }
-.nav_toggle-btn {
-  display: inline-block;
-  background: transparent;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.theme-toggle-btn.mobile-only {
-  display: none;
-}
-
-@media screen and (max-width: 800px) {
-  .theme-toggle-btn.mobile-only {
-    display: inline-block;
-    margin-right: 1rem;
-  }
-
-  .nav_toggle-btn {
-    margin-left: auto;
-  }
-}
-
+.nav_toggle-btn { display: none; }
 body.dark-mode nav .nav_menu li a,
 body.dark-mode .theme-toggle-btn { color: var(--color-white); }
 
