@@ -10,7 +10,8 @@
 
 The **EnlightenIt-Hub-App** is a full-stack MERN (MongoDB, Express.js, React, Node.js) blogging platform that enables users to create, share, and explore content across diverse topics. It features a modern UI, responsive design, and secure JWT-based authentication. Users can register, manage profiles, follow authors, and interact with posts through a personalized dashboard. Media uploads are handled via Cloudinary, and data is stored in MongoDB. The React frontend (deployed on Render) communicates with a Node.js/Express backend via RESTful APIs, with CORS support for cross-origin access—creating a scalable and engaging space for knowledge sharing.
 
-🔗 **Related Documentation**: [Client README](./client/README.md) | [Server README](./server/README.md)
+🔗 **Related Documentation**: [Client README](./client/README.md) | [Server README](./server/README.md) 
+
 🔗 **Project Demo**: <https://enlightenit-hub-app.onrender.com/>
 
 ---
