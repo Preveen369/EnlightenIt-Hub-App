@@ -17,26 +17,28 @@
 ### 📝 Blogging Platform
 
 - Create, share, and explore posts on various topics.
-
 - Follow your favorite creators and discover trending topics.
 
 ### 🔒 Secure & Friendly
 
 - Authentication using JSON Web Tokens (JWT).
-
 - Safe and welcoming space for users to connect and grow.
 
 ### 🌐 Full-Stack Integration
 
 - Frontend communicates with the backend via RESTful APIs.
-
 - Backend handles CRUD operations with MongoDB.
+- **CORS Configuration**: Backend is configured to allow cross-origin requests from the frontend for seamless integration.
 
 ### 📱 Responsive Design
 
 - Adapts to different screen sizes for a consistent experience.
-
 - Ensures usability on both desktop and mobile devices.
+
+### ☁️ File Storage Integration
+
+- Integrated with Cloudinary for efficient and secure file storage.
+- Supports uploading and managing images for posts and user profiles.
 
 ---
 
@@ -216,9 +218,11 @@ To connect the frontend, backend, and MongoDB, follow these steps:
    In the backend's `index.js` file, update the CORS configuration to allow requests from the frontend. Replace the existing CORS middleware configuration with the following:
 
    ```javascript
+   const cors = require('cors');
+
    app.use(cors({
      credentials: true,
-     origin: "https://localhost:3000" // Replace with your frontend URL
+     origin: "http://localhost:3000" // Replace with your frontend URL
    }));
    ```
 
