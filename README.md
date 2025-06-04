@@ -8,7 +8,7 @@
 ![Language](https://img.shields.io/badge/Language-JavaScript-yellow.svg)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
-**EnlightenIt-Hub-App** is a full-stack blogging platform built using the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to create, share, and explore posts on various topics, fostering a vibrant community of creators and readers. The frontend is deployed as a static site, and the backend is hosted as a web service on the Render platform.
+The **EnlightenIt-Hub-App** is a full-stack MERN blogging platform that allows users to create, share, and explore posts across various topics. It features a user-friendly interface, secure JWT-based authentication, and responsive design for all devices. The app supports user registration, profile management, and media uploads via Cloudinary. The frontend, built with React and deployed on Render, interacts with a robust Node.js/Express backend through RESTful APIs, with MongoDB for data storage and CORS configured for cross-origin access. This project fosters a vibrant community for sharing knowledge and ideas in a modern, scalable environment.
 
 ---
 
