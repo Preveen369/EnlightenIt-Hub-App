@@ -6,6 +6,16 @@ This is the frontend documentation for the **EnlightenIt-Hub-App**, a MERN blogg
 
 ---
 
+## 🚀 Features
+
+- **Blogging Platform**: Render intuitive UI for creating, sharing, and exploring posts, enabling seamless user interaction with content and creators.
+- **Responsive Design**: Adapt to various screen sizes using responsive CSS and flexible layouts, ensuring usability on both desktop and mobile devices.
+- **Dashboard**: Present a personalized dashboard UI for managing posts, with intuitive options for editing and deleting user-created content.
+- **Post Detail**: Render detailed post pages showing author, category, and creation date, providing a clean and informative user experience.
+- **User Profile**: Display and manage user profile interfaces, including editable fields for name, avatar, and preferences, with seamless form handling.
+
+---
+
 ## 🛠️ Tech Stack
 - **Frontend**: React, CSS
 - **State Management**: React Context API
