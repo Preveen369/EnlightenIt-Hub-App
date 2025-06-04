@@ -167,7 +167,7 @@ enlightenit-hub-app/
 
 5. **Deployment on Render**
 
-   ### Frontend Deployment on Render
+   ### ⭐ Frontend Deployment on Render
 
     The frontend is deployed as a static site on the Render platform for scalable hosting.
     To deploy your own instance on Render:
@@ -177,7 +177,7 @@ enlightenit-hub-app/
     - Set the publish directory to `build`.
     - Deploy the service, and Render will provide a live URL for the frontend.
 
-    ### Backend Deployment on Render
+    ### ⭐ Backend Deployment on Render
 
     The backend is deployed on the Render platform for scalable hosting.
     To deploy your own instance on Render:
@@ -192,6 +192,8 @@ enlightenit-hub-app/
     CLOUDINARY_API_SECRET=your_cloudinary_api_secret
     ```
     - Deploy the service, and Render will provide a live URL for the backend API.
+  
+   🌐 Access your app live at: https://enlightenit-hub-app.onrender.com/
 
 ---
 
