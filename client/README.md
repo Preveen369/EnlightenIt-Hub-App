@@ -1,6 +1,8 @@
 # 🌟 EnlightenIt-Hub-App - Frontend (Client)
 
-This is the frontend documentation for the **EnlightenIt-Hub-App**, a MERN blogging platform. The frontend is built with **React** and **CSS**, providing a modern, responsive user interface for users to create, share, and explore blog posts. For the main project overview, refer to the [Main README](../README.md). For backend details, refer to the [Server README](../server/README.md).
+This is the frontend documentation for the **EnlightenIt-Hub-App**, a MERN blogging platform. The frontend is built with **React** and **CSS**, providing a modern, responsive user interface for users to create, share, and explore blog posts. 
+
+🔗 **Related Documentation**: [Main Project README](../README.md) | [Server README](../server/README.md)
 
 ---
 
