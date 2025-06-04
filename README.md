@@ -81,7 +81,6 @@ The **EnlightenIt-Hub-App** is a full-stack MERN blogging platform that enables 
 
 ```plaintext
 enlightenit-hub-app/
-
     ├── server/
     │   ├── controllers/       # Backend controllers for user and post operations
     │   ├── middleware/        # Authentication and error handling middleware
@@ -116,6 +115,8 @@ enlightenit-hub-app/
 - Node.js (v14 or higher)  
 - npm or yarn  
 - MongoDB (local installation or MongoDB Atlas)
+- A Cloudinary Account (for cloud media storage)
+- Postman API (for API endpoints testing)
 
 ### 🧑‍💻 Steps to run
 
