@@ -21,7 +21,7 @@ The **EnlightenIt-Hub-App** is a full-stack MERN blogging platform that enables 
 
 ### 🔒 Secure & Friendly
 
-- Authentication using JSON Web Tokens (JWT).
+- Authentication using JSON Web Tokens (JWT), Bcrypt.js.
 - Safe and welcoming space for users to connect and grow.
 
 ### 🌐 Full-Stack Integration
