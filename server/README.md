@@ -6,6 +6,16 @@ This is the backend documentation for the **EnlightenIt-Hub-App**, a MERN bloggi
 
 ---
 
+## 🚀 Features
+
+- **Blogging Platform**: Handle CRUD operations for posts via RESTful APIs.
+- **Secure & Friendly**: Implement JWT authentication and Bcrypt.js password hashing.
+- **File Storage Integration**: Manage image uploads and storage with Cloudinary.
+- **Dashboard**: Provide APIs for user post management and permissions.
+- **Post Detail**: Serve post details, including author and category, via APIs.
+
+---
+
 ## 🛠️ Tech Stack
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
