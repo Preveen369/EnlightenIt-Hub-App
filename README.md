@@ -1,4 +1,4 @@
-# 🌟 EnlightenIt-Hub-App
+# 🌟 EnlightenIt-Hub-App - MERN blogging platform
 
 ![Platform](https://img.shields.io/badge/Platform-Web-blue.svg)
 ![Frontend](https://img.shields.io/badge/Frontend-React-orange.svg)
