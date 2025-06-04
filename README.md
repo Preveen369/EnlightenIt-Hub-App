@@ -44,30 +44,25 @@ The **EnlightenIt-Hub-App** is a full-stack MERN blogging platform that enables 
 
 - View posts created by specific authors.
 - Follow authors to stay updated on their latest posts.
-- Explore author profiles to learn more about their contributions.
 
 ### 🗂️ Category-Based Features
 
 - Browse posts by categories to find content of interest.
 - Filter posts based on specific topics like education, science, or entertainment.
-- Discover trending categories and explore related posts.
 
 ### 📊 Dashboard
 
 - Access a personalized dashboard to manage your posts.
-- View statistics and insights about your content.
 - Edit or delete posts directly from the dashboard.
 
 ### 📄 Post Detail
 
 - View detailed information about individual posts.
 - See the author, category, and creation date of each post.
-- Engage with posts through comments and likes (if implemented).
 
 ### 👥 User Profile
 
 - Manage your profile information, including name and avatar.
-- View a list of your posts and their performance.
 - Update your profile details and preferences.
 
 ---
