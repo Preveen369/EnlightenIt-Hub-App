@@ -1,6 +1,8 @@
 # 🌟 EnlightenIt-Hub-App - Backend (Server)
 
-This is the backend documentation for the **EnlightenIt-Hub-App**, a MERN blogging platform. The backend is built with **Node.js**, **Express.js**, and **MongoDB**, providing RESTful APIs for the frontend to interact with. For the main project overview, refer to the [Main README](../README.md). For frontend details, refer to the [Client README](../client/README.md).
+This is the backend documentation for the **EnlightenIt-Hub-App**, a MERN blogging platform. The backend is built with **Node.js**, **Express.js**, and **MongoDB**, providing RESTful APIs for the frontend to interact with. 
+
+🔗 **Related Documentation**: [Main Project README](../README.md) | [Client README](../client/README.md)
 
 ---
 
