@@ -8,7 +8,7 @@
 ![Language](https://img.shields.io/badge/Language-JavaScript-yellow.svg)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
-The **EnlightenIt-Hub-App** is a full-stack MERN blogging platform that allows users to create, share, and explore posts across various topics. It features a user-friendly interface, secure JWT-based authentication, and responsive design for all devices. The app supports user registration, profile management, and media uploads via Cloudinary. The frontend, built with React and deployed on Render, interacts with a robust Node.js/Express backend through RESTful APIs, with MongoDB for data storage and CORS configured for cross-origin access. This project fosters a vibrant community for sharing knowledge and ideas in a modern, scalable environment.
+The **EnlightenIt-Hub-App** is a full-stack MERN blogging platform that enables users to create, share, and explore content across diverse topics. It features a modern UI, responsive design, and secure JWT-based authentication. Users can register, manage profiles, follow authors, and interact with posts through a personalized dashboard. Media uploads are handled via Cloudinary, and data is stored in MongoDB. The React frontend (deployed on Render) communicates with a Node.js/Express backend via RESTful APIs, with CORS support for cross-origin access—creating a scalable and engaging space for knowledge sharing.
 
 ---
 
@@ -39,6 +39,36 @@ The **EnlightenIt-Hub-App** is a full-stack MERN blogging platform that allows u
 
 - Integrated with Cloudinary for efficient and secure file storage.
 - Supports uploading and managing images for posts and user profiles.
+
+### 👤 Author Features
+
+- View posts created by specific authors.
+- Follow authors to stay updated on their latest posts.
+- Explore author profiles to learn more about their contributions.
+
+### 🗂️ Category-Based Features
+
+- Browse posts by categories to find content of interest.
+- Filter posts based on specific topics like education, science, or entertainment.
+- Discover trending categories and explore related posts.
+
+### 📊 Dashboard
+
+- Access a personalized dashboard to manage your posts.
+- View statistics and insights about your content.
+- Edit or delete posts directly from the dashboard.
+
+### 📄 Post Detail
+
+- View detailed information about individual posts.
+- See the author, category, and creation date of each post.
+- Engage with posts through comments and likes (if implemented).
+
+### 👥 User Profile
+
+- Manage your profile information, including name and avatar.
+- View a list of your posts and their performance.
+- Update your profile details and preferences.
 
 ---
 
@@ -177,13 +207,14 @@ enlightenit-hub-app/
     - Set the publish directory to `build`.
     - Deploy the service, and Render will provide a live URL for the frontend.
 
-    ### ⭐ Backend Deployment on Render
+   ### ⭐ Backend Deployment on Render
 
     The backend is deployed on the Render platform for scalable hosting.
     To deploy your own instance on Render:
     - Push the `server` directory to a GitHub repository.
     - Create a new Web Service on Render and connect your repository.
     - Set the environment variables in Render's dashboard:
+
     ```env
     MONGO_URI=your_mongodb_connection_string
     JWT_SECRET=your_jwt_secret
@@ -191,9 +222,10 @@ enlightenit-hub-app/
     CLOUDINARY_API_KEY=your_cloudinary_api_key
     CLOUDINARY_API_SECRET=your_cloudinary_api_secret
     ```
+
     - Deploy the service, and Render will provide a live URL for the backend API.
   
-   🌐 Access your app live at: https://enlightenit-hub-app.onrender.com/
+   🌐 Access your app live at: <https://enlightenit-hub-app.onrender.com/>
 
 ---
 
