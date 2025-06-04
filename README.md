@@ -28,7 +28,7 @@ The **EnlightenIt-Hub-App** is a full-stack MERN blogging platform that enables 
 
 - Frontend communicates with the backend via RESTful APIs.
 - Backend handles CRUD operations with MongoDB.
-- **CORS Configuration**: Backend is configured to allow cross-origin requests from the frontend for seamless integration.
+- **CORS Configuration**: Backend is configured to allow cross-origin requests from frontend
 
 ### 📱 Responsive Design
 
