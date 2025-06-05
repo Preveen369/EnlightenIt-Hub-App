@@ -71,11 +71,11 @@ Below are some screenshots showcasing the **EnlightenIt-Hub-App** interface:
 
 ---
 
-## 📸 Project Demo
+## 📽️ Project Demo
 
-Below is the project video of the **EnlightenIt-Hub-App** interface:
+Below is the project demo video of the **EnlightenIt-Hub-App** interface:
 
-![Project Demo](<https://jmp.sh/2Mff88WX>)
+[Project Demo Video](https://jmp.sh/2Mff88WX)
 
 ---
 
