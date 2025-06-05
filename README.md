@@ -66,10 +66,8 @@ The **EnlightenIt-Hub-App** is a full-stack MERN (MongoDB, Express.js, React, No
 Below are some screenshots showcasing the **EnlightenIt-Hub-App** interface:
 
 ![Landing Page](./client/src/images/landing-page.png)
-*Caption*: The landing page showcases recent posts and popular topics.
 
 ![Home Page](./client/src/images/home-page.png)
-*Caption*: The home page displays a feed of recent posts and trending topics.
 
 ---
 
@@ -77,8 +75,7 @@ Below are some screenshots showcasing the **EnlightenIt-Hub-App** interface:
 
 Below is the project video of the **EnlightenIt-Hub-App** interface:
 
-![Project Demo](./Project-Demo.mp4)
-*Caption*: A quick overview of the EnlightenIt-Hub-App features and functionalities.
+![Project Demo](<https://jmp.sh/2Mff88WX>)
 
 ---
 
