@@ -71,6 +71,14 @@ Below are some screenshots showcasing the **EnlightenIt-Hub-App** interface:
 ![Home Page](./client/src/images/home-page.png)
 *Caption*: The home page displays a feed of recent posts and trending topics.
 
+---
+
+## 📸 Project Demo
+
+Below is the project video of the **EnlightenIt-Hub-App** interface:
+
+![Project Demo](./Project-Demo.mp4)
+*Caption*: A quick overview of the EnlightenIt-Hub-App features and functionalities.
 
 ---
 
