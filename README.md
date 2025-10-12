@@ -16,7 +16,7 @@ The **EnlightenIt-Hub-App** is a full-stack MERN (MongoDB, Express.js, React, No
 
 ---
 
-## 🚀 Features
+## 🚀 Core Features
 
 ### 📝 Blogging Platform
 - Create, share, and explore posts on various topics.
