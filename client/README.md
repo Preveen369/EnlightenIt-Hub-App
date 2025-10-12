@@ -6,7 +6,7 @@ This is the frontend documentation for the **EnlightenIt-Hub-App**, a MERN blogg
 
 ---
 
-## 🚀 Features
+## 🚀 Core Features
 
 - **Blogging Platform**: Render UI for creating and exploring posts.
 - **Responsive Design**: Adapt to all screen sizes for consistent usability.
