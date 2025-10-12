@@ -6,7 +6,7 @@ This is the backend documentation for the **EnlightenIt-Hub-App**, a MERN bloggi
 
 ---
 
-## 🚀 Features
+## 🚀 Core Features
 
 - **Blogging Platform**: Handle CRUD operations for posts via RESTful APIs.
 - **Secure & Friendly**: Implement JWT authentication and Bcrypt.js password hashing.
