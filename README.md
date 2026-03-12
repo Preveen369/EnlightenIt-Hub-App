@@ -19,17 +19,17 @@ The **EnlightenIt-Hub-App** is a full-stack MERN (MongoDB, Express.js, React, No
 
 ## Table of Contents
 
-- [🚀 Core Features](#core-features)
-- [📸 Screenshots](#screenshots)
-- [📽️ Project Demo](#project-demo)
-- [🛠️ Tech Stack](#tech-stack)
-- [📂 Project Structure](#project-structure)
-- [🧪 Installation & Setup](#installation-setup)
-- [➡️ Connecting Frontend, Backend & MongoDB](#connecting-frontend-backend-mongodb)
-- [🤝 Contributing](#contributing)
-- [📄 License](#license)
-- [📧 Contact](#contact)
-- [🌟 Show Your Support](#show-your-support)
+- [🚀 Core Features](#-core-features)
+- [📸 Screenshots](#-screenshots)
+- [📽️ Project Demo](#-project-demo)
+- [🛠️ Tech Stack](#-tech-stack)
+- [📂 Project Structure](#-project-structure)
+- [🧪 Installation & Setup](#-installation-setup)
+- [➡️ Connecting Frontend, Backend & MongoDB](#-connecting-frontend-backend-mongodb)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [📧 Contact](#-contact)
+- [🌟 Show Your Support](#-show-your-support)
 
 ---
 
