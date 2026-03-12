@@ -35,6 +35,7 @@ The **EnlightenIt-Hub-App** is a full-stack MERN (MongoDB, Express.js, React, No
 
 ---
 
+<a name="core-features"></a>
 ## 🚀 Core Features
 
 ### 📝 Blogging Platform
@@ -80,6 +81,7 @@ The **EnlightenIt-Hub-App** is a full-stack MERN (MongoDB, Express.js, React, No
 
 ---
 
+<a name="screenshots"></a>
 ## 📸 Screenshots
 
 Below are some screenshots showcasing the **EnlightenIt-Hub-App** interface:
@@ -90,6 +92,7 @@ Below are some screenshots showcasing the **EnlightenIt-Hub-App** interface:
 
 ---
 
+<a name="project-demo"></a>
 ## 📽️ Project Demo
 
 Below is the project demo video of the **EnlightenIt-Hub-App** interface:
@@ -98,6 +101,7 @@ Below is the project demo video of the **EnlightenIt-Hub-App** interface:
 
 ---
 
+<a name="tech-stack"></a>
 ## 🛠️ Tech Stack
 - **Frontend**: React, CSS ([Client README](./client/README.md))
 - **Backend**: Node.js, Express.js ([Server README](./server/README.md))
@@ -107,6 +111,7 @@ Below is the project demo video of the **EnlightenIt-Hub-App** interface:
 
 ---
 
+<a name="project-structure"></a>
 ## 📂 Project Structure
 ```plaintext
 enlightenit-hub-app/
@@ -121,6 +126,7 @@ enlightenit-hub-app/
 
 ---
 
+<a name="installation--setup"></a>
 ## 🧪 Installation & Setup
 ### 📋 Prerequisites
 - Node.js (v14 or higher)
@@ -149,11 +155,13 @@ enlightenit-hub-app/
 
 ---
 
+<a name="connecting-frontend-backend-mongodb"></a>
 ## Connecting Frontend, Backend & MongoDB
 For detailed instructions on connecting the frontend, backend, and MongoDB, refer to the [Server README](./server/README.md) and [Client README](./client/README.md) for specific configurations.
 
 ---
 
+<a name="contributing"></a>
 ## 🤝 Contributing
 Pull requests are welcome! Feel free to fork the repository and suggest improvements.
 
@@ -170,12 +178,14 @@ git push origin feature-name
 ```
 ---
 
+<a name="license"></a>
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
+<a name="contact"></a>
 ## 📧 Contact
 For queries or suggestions:
 - 📩 Email: [spreveen123@gmail.com](mailto:spreveen123@gmail.com)
@@ -183,5 +193,6 @@ For queries or suggestions:
 
 ---
 
+<a name="show-your-support"></a>
 ## 🌟 Show Your Support
 If you like this project, please consider giving it a ⭐ on GitHub!
