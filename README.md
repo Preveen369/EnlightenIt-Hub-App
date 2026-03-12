@@ -8,6 +8,8 @@
 ![Language](https://img.shields.io/badge/Language-JavaScript-yellow.svg)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey.svg)
 
+## Platform Description
+
 The **EnlightenIt-Hub-App** is a full-stack MERN (MongoDB, Express.js, React, Node.js) blogging platform that enables users to create, share, and explore content across diverse topics. It features a modern UI, responsive design, and secure JWT-based authentication. Users can register, manage profiles, follow authors, and interact with posts through a personalized dashboard. Media uploads are handled via Cloudinary, and data is stored in MongoDB. The React frontend (deployed on Render) communicates with a Node.js/Express backend via RESTful APIs, with CORS support for cross-origin access—creating a scalable and engaging space for knowledge sharing.
 
 🔗 **Related Documentations**: [Client README](./client/README.md) | [Server README](./server/README.md) 
@@ -27,51 +29,51 @@ The **EnlightenIt-Hub-App** is a full-stack MERN (MongoDB, Express.js, React, No
   <tbody>
     <tr style="background: #f8f9fa;">
       <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">01</td>
-      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#platform-description" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">Platform Description</a></td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;">[Platform Description](#platform-description)</td>
     </tr>
     <tr>
       <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">02</td>
-      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#core-features" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">🚀 Core Features</a></td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;">[🚀 Core Features](#core-features)</td>
     </tr>
     <tr style="background: #f8f9fa;">
       <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">03</td>
-      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#screenshots" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">📸 Screenshots</a></td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;">[📸 Screenshots](#screenshots)</td>
     </tr>
     <tr>
       <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">04</td>
-      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#project-demo" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">📽️ Project Demo</a></td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;">[📽️ Project Demo](#project-demo)</td>
     </tr>
     <tr style="background: #f8f9fa;">
       <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">05</td>
-      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#tech-stack" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">🛠️ Tech Stack</a></td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;">[🛠️ Tech Stack](#tech-stack)</td>
     </tr>
     <tr>
       <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">06</td>
-      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#project-structure" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">📂 Project Structure</a></td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;">[📂 Project Structure](#project-structure)</td>
     </tr>
     <tr style="background: #f8f9fa;">
       <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">07</td>
-      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#installation-setup" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">🧪 Installation & Setup</a></td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;">[🧪 Installation & Setup](#installation-setup)</td>
     </tr>
     <tr>
       <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">08</td>
-      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#connecting-frontend-backend-mongodb" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">➡️ Connecting Frontend, Backend & MongoDB</a></td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;">[➡️ Connecting Frontend, Backend & MongoDB](#connecting-frontend-backend-mongodb)</td>
     </tr>
     <tr style="background: #f8f9fa;">
       <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">09</td>
-      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#contributing" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">🤝 Contributing</a></td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;">[🤝 Contributing](#contributing)</td>
     </tr>
     <tr>
       <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">10</td>
-      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#license" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">📄 License</a></td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;">[📄 License](#license)</td>
     </tr>
     <tr style="background: #f8f9fa;">
       <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">11</td>
-      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#contact" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">📧 Contact</a></td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;">[📧 Contact](#contact)</td>
     </tr>
     <tr>
       <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">12</td>
-      <td style="padding: 16px 25px;"><a href="#show-your-support" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">🌟 Show Your Support</a></td>
+      <td style="padding: 16px 25px;">[🌟 Show Your Support](#show-your-support)</td>
     </tr>
   </tbody>
 </table>
@@ -193,7 +195,7 @@ enlightenit-hub-app/
 
 ---
 
-## ➡️ Connecting Frontend, Backend, and MongoDB
+## Connecting Frontend, Backend & MongoDB
 For detailed instructions on connecting the frontend, backend, and MongoDB, refer to the [Server README](./server/README.md) and [Client README](./client/README.md) for specific configurations.
 
 ---
