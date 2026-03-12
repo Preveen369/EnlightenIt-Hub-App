@@ -8,18 +8,19 @@ This is the frontend documentation for the **EnlightenIt-Hub-App**, a MERN blogg
 
 | No. | Sections |
 |-----|----------|
-| 01  | [🚀 Core Features](#-core-features) |
-| 02  | [🛠️ Tech Stack](#-tech-stack) |
-| 03  | [📂 Client Folder Structure](#-client-folder-structure) |
-| 04  | [🧪 Installation & Setup](#-installation--setup) |
-| 05  | [➡️ Connecting to the Backend](#-connecting-to-the-backend) |
-| 06  | [⭐ Deployment on Render](#-deployment-on-render) |
-| 07  | [🤝 Contributing](#-contributing) |
-| 08  | [📧 Contact](#-contact) |
-| 09  | [🌟 Show Your Support](#-show-your-support) |
+| 01  | [🚀 Core Features](#core-features) |
+| 02  | [🛠️ Tech Stack](#tech-stack) |
+| 03  | [📂 Client Folder Structure](#client-folder-structure) |
+| 04  | [🧪 Installation & Setup](#installation--setup) |
+| 05  | [➡️ Connecting to the Backend](#connecting-to-the-backend) |
+| 06  | [⭐ Deployment on Render](#deployment-on-render) |
+| 07  | [🤝 Contributing](#contributing) |
+| 08  | [📧 Contact](#contact) |
+| 09  | [🌟 Show Your Support](#show-your-support) |
 
 ---
 
+<a name="core-features"></a>
 ## 🚀 Core Features
 
 - **Blogging Platform**: Render UI for creating and exploring posts.
@@ -30,6 +31,7 @@ This is the frontend documentation for the **EnlightenIt-Hub-App**, a MERN blogg
 
 ---
 
+<a name="tech-stack"></a>
 ## 🛠️ Tech Stack
 - **Frontend**: React, CSS
 - **State Management**: React Context API
@@ -37,6 +39,7 @@ This is the frontend documentation for the **EnlightenIt-Hub-App**, a MERN blogg
 
 ---
 
+<a name="client-folder-structure"></a>
 ## 📂 Client Folder Structure
 ```plaintext
 client/
@@ -54,6 +57,7 @@ client/
 
 ---
 
+<a name="installation--setup"></a>
 ## 🧪 Installation & Setup
 ### 📋 Prerequisites
 - Node.js (v14 or higher)
@@ -85,6 +89,7 @@ client/
 
 ---
 
+<a name="connecting-to-the-backend"></a>
 ## ➡️ Connecting to the Backend
 To connect the frontend to the backend, update the API base URL in `src/context/userContext.js` or other relevant files to point to the backend server:
 
@@ -96,6 +101,7 @@ For deployment, ensure this URL points to the live backend service (e.g., Render
 
 ---
 
+<a name="deployment-on-render"></a>
 ## ⭐ Deployment on Render
 The frontend is deployed as a static site on the Render platform for scalable hosting. To deploy your own instance:
 - Push the `client` directory to a GitHub repository.
@@ -108,11 +114,13 @@ For backend deployment details, refer to the [Server README](../server/README.md
 
 ---
 
+<a name="contributing"></a>
 ## 🤝 Contributing
 Contributions to the frontend are welcome! Refer to the [Main README](../README.md) for contribution guidelines.
 
 ---
 
+<a name="contact"></a>
 ## 📧 Contact
 For queries or suggestions:
 - 📩 Email: [spreveen123@gmail.com](mailto:spreveen123@gmail.com)
@@ -120,5 +128,6 @@ For queries or suggestions:
 
 ---
 
+<a name="show-your-support"></a>
 ## 🌟 Show Your Support
 If you like this project, please consider giving it a ⭐ on GitHub!
