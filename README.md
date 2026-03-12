@@ -16,6 +16,69 @@ The **EnlightenIt-Hub-App** is a full-stack MERN (MongoDB, Express.js, React, No
 
 ---
 
+<table style="width: 100%; max-width: 800px; margin: 30px auto; border-collapse: separate; border-spacing: 0; font-family: 'Segoe UI', Arial, sans-serif; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border-radius: 16px; overflow: hidden;">
+  <thead>
+    <tr>
+      <th colspan="2" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px 25px; font-size: 22px; text-align: center; font-weight: 600; letter-spacing: 0.5px;">
+        📋 Table of Contents
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background: #f8f9fa;">
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">01</td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#platform-description" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">Platform Description</a></td>
+    </tr>
+    <tr>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">02</td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#core-features" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">🚀 Core Features</a></td>
+    </tr>
+    <tr style="background: #f8f9fa;">
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">03</td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#screenshots" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">📸 Screenshots</a></td>
+    </tr>
+    <tr>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">04</td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#project-demo" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">📽️ Project Demo</a></td>
+    </tr>
+    <tr style="background: #f8f9fa;">
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">05</td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#tech-stack" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">🛠️ Tech Stack</a></td>
+    </tr>
+    <tr>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">06</td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#project-structure" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">📂 Project Structure</a></td>
+    </tr>
+    <tr style="background: #f8f9fa;">
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">07</td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#installation-setup" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">🧪 Installation & Setup</a></td>
+    </tr>
+    <tr>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">08</td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#connecting-frontend-backend-mongodb" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">➡️ Connecting Frontend, Backend & MongoDB</a></td>
+    </tr>
+    <tr style="background: #f8f9fa;">
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">09</td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#contributing" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">🤝 Contributing</a></td>
+    </tr>
+    <tr>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">10</td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#license" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">📄 License</a></td>
+    </tr>
+    <tr style="background: #f8f9fa;">
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">11</td>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee;"><a href="#contact" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">📧 Contact</a></td>
+    </tr>
+    <tr>
+      <td style="padding: 16px 25px; border-bottom: 1px solid #eee; width: 50px; text-align: center; font-weight: bold; color: #667eea; font-size: 18px;">12</td>
+      <td style="padding: 16px 25px;"><a href="#show-your-support" style="text-decoration: none; color: #2c3e50; font-size: 17px; font-weight: 500;">🌟 Show Your Support</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+---
+
 ## 🚀 Core Features
 
 ### 📝 Blogging Platform
