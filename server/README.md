@@ -6,15 +6,17 @@ This is the backend documentation for the **EnlightenIt-Hub-App**, a MERN bloggi
 
 ## Table of Contents
 
-- [🚀 Core Features](#-core-features)
-- [🛠️ Tech Stack](#-tech-stack)
-- [📂 Server Folder Structure](#-server-folder-structure)
-- [🧪 Installation & Setup](#-installation--setup)
-- [➡️ Connecting to Frontend and MongoDB](#-connecting-to-frontend-and-mongodb)
-- [⭐ Deployment on Render](#-deployment-on-render)
-- [🤝 Contributing](#-contributing)
-- [📧 Contact](#-contact)
-- [🌟 Show Your Support](#-show-your-support)
+| No. | Sections |
+|-----|----------|
+| 01  | [🚀 Core Features](#-core-features) |
+| 02  | [🛠️ Tech Stack](#-tech-stack) |
+| 03  | [📂 Server Folder Structure](#-server-folder-structure) |
+| 04  | [🧪 Installation & Setup](#-installation--setup) |
+| 05  | [➡️ Connecting to Frontend and MongoDB](#-connecting-to-frontend-and-mongodb) |
+| 06  | [⭐ Deployment on Render](#-deployment-on-render) |
+| 07  | [🤝 Contributing](#-contributing) |
+| 08  | [📧 Contact](#-contact) |
+| 09  | [🌟 Show Your Support](#-show-your-support) |
 
 ---
 
