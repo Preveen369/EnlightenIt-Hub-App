@@ -4,6 +4,18 @@ This is the frontend documentation for the **EnlightenIt-Hub-App**, a MERN blogg
 
 🔗 **Related Documentation**: [Main Project README](../README.md) | [Server README](../server/README.md)
 
+## Table of Contents
+
+- [🚀 Core Features](#core-features)
+- [🛠️ Tech Stack](#tech-stack)
+- [📂 Client Folder Structure](#client-folder-structure)
+- [🧪 Installation & Setup](#installation--setup)
+- [➡️ Connecting to the Backend](#connecting-to-the-backend)
+- [⭐ Deployment on Render](#deployment-on-render)
+- [🤝 Contributing](#contributing)
+- [📧 Contact](#contact)
+- [🌟 Show Your Support](#show-your-support)
+
 ---
 
 ## 🚀 Core Features
